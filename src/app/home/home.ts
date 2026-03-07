@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HousingLocation } from '../housing-location/housing-location';
 import { HousingLocationInfo } from '../housinglocationinfo';
 import { HousingService } from '../housing-service';
 
 @Component({
   selector: 'app-home',
-  imports: [HousingLocation],
+  imports: [CommonModule, HousingLocation],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
